@@ -1,0 +1,21 @@
+#installation du package sSMTP:
+sudo -i
+apt install ssmtp
+
+#modification du fichier:
+cd /etc/ssmtp
+nano ssmtp.conf
+
+#On ajoute le fichier d’alias inversé:
+cd etc/ssmtp
+nano revaliases
+
+#Création d’un fichier .txt contenant le message du test
+cd /root
+nano msg.txt
+
+#On redirige le fichier msg.txt vers l’entrée suivante :
+/usr/sbin/ssmtp miniprojet.uit@gmail.com < msg.txt
+
+AuthUser=miniprojet.uit@gmail.com
+AuthPass=Test2021
