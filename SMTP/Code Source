@@ -18,4 +18,4 @@ nano msg.txt
 /usr/sbin/ssmtp miniprojet.uit@gmail.com < msg.txt
 
 AuthUser=miniprojet.uit@gmail.com
-AuthPass=Test2021
+AuthPass=Test****
